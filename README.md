@@ -14,22 +14,22 @@ This solution can be  expanded to large scale landscape where customer’s docum
 When a customer is onboarded in any bank , a consent can be taken for that customer if his documents can be shared with other banks for any of his engagement with them in future.
 
 
-Installations : 
-
 How to use it :  
-1.	A common portal based on Microsoft Portal can be exposed to banks to search and see the customer details OR Banks can choose to use direct API < name of API>
+1.	A common portal based on Microsoft Portal can be exposed to banks to search and see the customer details OR Banks can choose to use direct API "https://bankapidemo.azurewebsites.net/api/customerdetails"
 2.	For demo purpose Microsoft Canvas app is used to build a search and retrieval mechanism.
-3.	Search based on prospect basic details , Name, email id
+3.	Search based on prospect basic details , Name, email id. 
+  Examples: 
+  a) https://bankapidemo.azurewebsites.net/api/customerdetails/customername?name=Tom%20White 
+  b) https://bankapidemo.azurewebsites.net/api/customerdetails/email?email=glenmaxwell@rbs.com
 4.	The  API , integrating multiple banks together in background will search matching result.
 5.	All matching result will be shown to applicant bank with details if the prospect is a customer for any bank , its details of document verification as well .
 6.	Applicant Bank can choose to request for reusing the document from the verified banks source and can also request for verification certificate from the bank to consider immediate verification and putting a Due diligence reminder after a suitable time for the prospect once onboarded.
 
-How to prepare solution in Visual Studio:
+
+Installations : 
 1. Download and xtract all the following three zip files:
 - ApiTest.zip
 - dll1.zip
 - dll2.zip
 
-2. Copy all the dll's from both dll1 and dll2 into the follwing path "\ApiTest\obj\Release\netcoreapp2.1\win-x86\PubTmp\Out" and build the project before running. 
-
-# rAPId
+2. Copy all the dll's from both dll1 and dll2 into the follwing path "\ApiTest\obj\Release\netcoreapp2.1\win-x86\PubTmp\Out" and build the project before running.
